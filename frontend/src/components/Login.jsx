@@ -54,6 +54,7 @@ export const Login = () => {
     }
     const handleLogin = async(e)=>{
         e.preventDefault();
+        console.log(loginUser);
         if(handleValidate(loginUser))
         {
             setLoginState("Pending")

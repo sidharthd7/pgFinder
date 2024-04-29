@@ -12,7 +12,7 @@ export default function UpdateProperty() {
     const navigate = useNavigate();
 
     const Location = useLocation();
-    const getItem = Location.state.item;
+    const getItem = Location?.state?.item;
     const {title, price, contactNo, unit,location, description ,images } = getItem;
     const ItemId = getItem._id;
     const UpdatePgObject = {title, price, contactNo, description ,location,unit, images};

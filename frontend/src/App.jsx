@@ -25,6 +25,7 @@ function App() {
                 <Route  path="/pg/:id" element={<Property />} />
             </Routes>
         </CloudinaryContext>
+        {/* <Login/> */}
         </>
     )
 }

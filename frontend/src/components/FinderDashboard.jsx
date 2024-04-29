@@ -133,8 +133,8 @@ export const FinderDashboard = () => {
             </div>
             <div className='px-4 mt-4'>
             {
-                (items.length===0)? <h1>No PGs found</h1> : 
-                items.map((item, id)=>{
+                (items?.length===0)? <h1>No PGs found</h1> : 
+                items?.map((item, id)=>{
                     // console.log(item);
                     return(<Propertycard item={item} key={id} PropertyCardType={"Readable"}/>);
                 })
